@@ -14,3 +14,42 @@ Many people around the world have diabetes, and we need a way to find out who mi
 - hba1c_level: HbA1c level, a measure of average blood glucose over a few months (numeric).
 - blood_glucose_level: Fasting blood glucose level (numeric).
 - diabetes: Target variable indicating the presence of diabetes (binary: 0 for No, 1 for Yes).
+
+# EDA
+Explored dataset structure and types, summarized numerical and categorical features, assessed missing data, analyzed relationships between features, and examined class distribution for insights into potential imbalances.
+
+# Model Training
+
+# Environment Management
+
+I used pipenv for the virtual environment. 
+
+```
+pip install pipenv
+```
+To replicate the environment, on your command line, use
+
+```
+pipenv install numpy scikit-learn==0.24.2 flask waitress
+```
+
+For the required versions for libraries, use requirements.txt
+
+```
+$pip install -r requirements.txt 
+```
+
+# Containerization
+
+Use this command for container building.
+
+```
+$Docker build -t 'container_name'
+```
+
+Use this container running
+
+```
+$Docker run -it --rm -p 9696:9696 'container_name'
+```
+
