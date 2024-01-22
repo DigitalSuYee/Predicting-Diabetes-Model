@@ -20,6 +20,13 @@ Explored dataset structure and types, summarized numerical and categorical featu
 
 # Model Training
 
+## Model Training with Decision Tree:
+A Decision Tree model was trained to predict diabetes based on features like age, BMI, and medical history. The scikit-learn library facilitated both model training and hyperparameter tuning through a grid search. Hyperparameters, including tree depth and minimum samples per leaf, were optimized to enhance the model's predictive performance. 
+
+## Model Training with Logistic Regression:
+Employing the scikit-learn toolkit, we trained a Logistic Regression model on a dataset comprising features like age, BMI, and medical history for diabetes prediction. Parameter tuning involved exploring values of C (inverse of regularization strength) including 1, 0.1, 0.01, and 10. The optimal parameter was identified as C = 10, and this tuned model, showcasing superior performance, was selected for deployment. AUC-ROC curve analysis was instrumental in making this determination.
+
+
 # Environment Management
 
 I used pipenv for the virtual environment. 
